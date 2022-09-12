@@ -1,0 +1,71 @@
+@page
+@model Presentacion.Pages.CrudAccesoC
+
+<div class="big-container">
+    <h1>Accesos Clientes</h1>
+    <div class="table-responsive">
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        Id
+                    </th>
+                    <th>
+                        Cedula
+                    </th>
+                    <th>
+                        Usuario
+                    </th>
+                    <th>
+                        Contraseña
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <form method="post">
+                    @foreach (var accesoC in Model.accesosC)
+                    {
+                        <tr>
+                            <td>@accesoC.Id</td>
+                            <td>@accesoC.ClienteCedula</td>
+                            <td>@accesoC.Usuario</td>
+                            <td>@accesoC.Contraseña</td>
+                            <td class="al-right"><button asp-page-handler="Delete" asp-route-id="@accesoC.Id"
+                                onclick="return confirm('¿Está seguro de eliminar este acceso?')"
+                                class="light-buttons">Eliminar</button></td>
+                        </tr>
+                    }
+                </form>
+            </tbody>
+        </table>
+    </div>
+    <hr>
+    <div class="container-fluid">
+        <div class="mini-containerA">
+            <div>
+                <h1>Registrar Acceso</h1>
+            </div>
+            <div class="shadow">
+                <form method="post">
+                    <input type="text" asp-for=" NuevoAccesoC.ClienteCedula" placeholder="C. Cliente" required />
+                    <input type="text" asp-for=" NuevoAccesoC.Usuario" placeholder="Usuario" required />
+                    <input type="text" asp-for=" NuevoAccesoC.Contraseña" placeholder="Contraseña" required />
+                    <button type="submit" class="no-light-buttons">Guardar</button>
+                </form>
+            </div>
+        </div>
+        <div class="mini-containerB">
+            <div>
+                <h1>Actualizar Acceso</h1>
+            </div>
+            <div class="shadow">
+                <form method="post">
+                    <input type="text" asp-for=" AccesoCEditar.ClienteCedula" placeholder="Buscar Cédula" required />
+                    <input type="text" asp-for=" AccesoCEditar.Usuario" placeholder="Usuario" required />
+                    <input type="text" asp-for=" AccesoCEditar.Contraseña" placeholder="Contraseña" required />
+                    <button type="submit" asp-page-handler="Edit" class="no-light-buttons">Editar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

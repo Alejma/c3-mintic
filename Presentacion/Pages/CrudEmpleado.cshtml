@@ -1,0 +1,96 @@
+@page
+@model Presentacion.Pages.CrudEmpleado
+
+<div class="big-container">
+    <h1>Empleados</h1>
+    <div class="table-responsive">
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        Id
+                    </th>
+                    <th>
+                        Nombre
+                    </th>
+                    <th>
+                        Apellido
+                    </th>
+                    <th>
+                        Cedula
+                    </th>
+                    <th>
+                        CargoId
+                    </th>
+                    <th>
+                        Telefono
+                    </th>
+                    <th>
+                        Direccion
+                    </th>
+                    <th>
+                        Correo
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <form method="post">
+                    @foreach (var empleado in Model.empleados)
+                    {
+                        <tr>
+                            <td>@empleado.Id</td>
+                            <td>@empleado.Nombre</td>
+                            <td>@empleado.Apellido</td>
+                            <td>@empleado.Cedula</td>
+                            <td>@empleado.CargoId</td>
+                            <td>@empleado.Telefono</td>
+                            <td>@empleado.Direccion</td>
+                            <td>@empleado.Correo</td>
+                            <td class="al-right"><button asp-page-handler="Delete" asp-route-id="@empleado.Id"
+                                onclick="return confirm('¿Está seguro de eliminar este empleado?')"
+                                class="light-buttons">Eliminar</button></td>
+                        </tr>
+                    }
+                </form>
+            </tbody>
+        </table>
+    </div>
+    <hr>
+    <div class="container-fluid">
+        <div class="mini-containerA">
+            <div>
+                <h1>Registrar Empleado</h1>
+            </div>
+            <div class="shadow">
+                <form method="post">
+                    <input type="text" asp-for="NuevoEmpleado.Nombre" placeholder="Nombres" required />
+                    <input type="text" asp-for="NuevoEmpleado.Apellido" placeholder="Apellidos" required />
+                    <input type="text" asp-for="NuevoEmpleado.Cedula" placeholder="Cedula" required />
+                    <input type="text" asp-for="NuevoEmpleado.CargoId" placeholder="Id Cargo" required />
+                    <input type="text" asp-for="NuevoEmpleado.Telefono" placeholder="Telefono" required />
+                    <input type="text" asp-for="NuevoEmpleado.Direccion" placeholder="Direccion" required />
+                    <input type="email" asp-for="NuevoEmpleado.Correo" placeholder="Correo" required />
+                    <button type="submit" class="no-light-buttons">Guardar</button>
+                </form>
+            </div>
+        </div>
+        <div class="mini-containerB">
+            <div>
+                <h1>Actualizar Empleado</h1>
+            </div>
+            <div class="shadow">
+                <form method="post">
+                    <input type="text" asp-for="EmpleadoEditar.Cedula" placeholder="Buscar Cédula" required />
+                    <input type="text" asp-for="EmpleadoEditar.Nombre" placeholder="Nombres" required />
+                    <input type="text" asp-for="EmpleadoEditar.Apellido" placeholder="Apellidos" required />
+                    <input type="text" asp-for="EmpleadoEditar.CargoId" placeholder="Id Cargo" required />
+                    <input type="text" asp-for="EmpleadoEditar.Telefono" placeholder="Telefono" required />
+                    <input type="text" asp-for="EmpleadoEditar.Direccion" placeholder="Direccion" required />
+                    <input type="email" asp-for="EmpleadoEditar.Correo" placeholder="Correo" required />
+                    <button type="submit" asp-page-handler="Edit" class="no-light-buttons">Editar</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>

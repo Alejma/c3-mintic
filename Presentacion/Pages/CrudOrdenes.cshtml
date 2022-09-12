@@ -1,0 +1,106 @@
+@page
+@model Presentacion.Pages.CrudOrdenes
+
+<div class="big-container">
+    <h1>Ordenes de Servicio</h1>
+    <div class="table-responsive">
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        Id
+                    </th>
+                    <th>
+                        RevId
+                    </th>
+                    <th>
+                        EmpCedula
+                    </th>
+                    <th>
+                        ActSoftware
+                    </th>
+                    <th>
+                        InstRepuestos
+                    </th>
+                    <th>
+                        CostoRespuestos
+                    </th>
+                    <th>
+                        CostoServicio
+                    </th>
+                    <th>
+                        TotalPagar
+                    </th>
+                    <th>
+                        Observaciones
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <form method="post">
+                    @foreach (var orden in Model.ordenes)
+                    {
+                        <tr>
+                            <td>@orden.Id</td>
+                            <td>@orden.RevId</td>
+                            <td>@orden.EmpCedula</td>
+                            <td>@orden.ActSoftware</td>
+                            <td>@orden.InstRepuestos</td>
+                            <td>@orden.CostoRespuestos</td>
+                            <td>@orden.CostoServicio</td>
+                            <td>@orden.TotalPagar</td>
+                            <td>@orden.Observaciones</td>
+
+                            <td class="al-right"><button asp-page-handler="Delete" asp-route-id="@orden.Id"
+                                onclick="return confirm('¿Está seguro de eliminar esta orden?')"
+                                class="light-buttons">Eliminar</button></td>
+                        </tr>
+                    }
+                </form>
+            </tbody>
+        </table>
+    </div>
+    <hr>
+    <div class="container-fluid">
+        <div class="mini-containerA">
+            <div>
+                <h1>Crear Orden de Servicio</h1>
+            </div>
+            <div class="shadow">
+                <form method="post">
+                    <input type="text" asp-for="NuevaOrden.RevId" placeholder="Id Revision" required />
+                    <input type="text" asp-for="NuevaOrden.EmpCedula" placeholder="C.C. Empleado" required />
+                    <input type="text" asp-for="NuevaOrden.ActSoftware" placeholder="Actualización Software" required />
+                    <input type="text" asp-for="NuevaOrden.InstRepuestos" placeholder="Instalación Repuestos"
+                        required />
+                    <input type="text" asp-for="NuevaOrden.CostoRespuestos" placeholder="Costo Repuestos" required />
+                    <input type="text" asp-for="NuevaOrden.CostoServicio" placeholder="Costo Servicio" required />
+                    <input type="text" asp-for="NuevaOrden.TotalPagar" placeholder="Total a Pagar" required />
+                    <input type="text" asp-for="NuevaOrden.Observaciones" placeholder="Observaciones" required />
+                    <button type="submit" class="no-light-buttons">Guardar</button>
+                </form>
+            </div>
+        </div>
+        <div class="mini-containerB">
+            <div>
+                <h1>Actualizar Orden de Servicio</h1>
+            </div>
+            <div class="shadow">
+                <form method="post">
+                    <input type="text" asp-for="OrdenEditar.RevId" placeholder="Buscar Id revision" required />
+                    <input type="text" asp-for="OrdenEditar.EmpCedula" placeholder="C.C. Empleado" required />
+                    <input type="text" asp-for="OrdenEditar.ActSoftware" placeholder="Actualización Software"
+                        required />
+                    <input type="text" asp-for="OrdenEditar.InstRepuestos" placeholder="Instalación Repuestos"
+                        required />
+                    <input type="text" asp-for="OrdenEditar.CostoRespuestos" placeholder="Costo Repuestos" required />
+                    <input type="text" asp-for="OrdenEditar.CostoServicio" placeholder="Costo Servicio" required />
+                    <input type="text" asp-for="OrdenEditar.TotalPagar" placeholder="Total a Pagar" required />
+                    <input type="text" asp-for="OrdenEditar.Observaciones" placeholder="Observaciones" required />
+                    <button type="submit" asp-page-handler="Edit" class="no-light-buttons">Editar</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>

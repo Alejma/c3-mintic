@@ -1,0 +1,92 @@
+@page
+@model Presentacion.Pages.CrudCliente
+
+<div class="big-container">
+    <h1>Clientes</h1>
+    <div class="table-responsive">
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        Id
+                    </th>
+                    <th>
+                        Nombres
+                    </th>
+                    <th>
+                        Apellidos
+                    </th>
+                    <th>
+                        Cedula
+                    </th>
+                    <th>
+                        Telefono
+                    </th>
+                    <th>
+                        Direccion
+                    </th>
+                    <th>
+                        Correo
+                    </th>
+                    <th>
+                        Acciones
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <form method="post">
+                    @foreach (var cliente in Model.clientes)
+                    {
+                        <tr>
+                            <td>@cliente.Id</td>
+                            <td>@cliente.Nombre</td>
+                            <td>@cliente.Apellido</td>
+                            <td>@cliente.Cedula</td>
+                            <td>@cliente.Telefono</td>
+                            <td>@cliente.Direccion</td>
+                            <td>@cliente.Correo</td>
+                            <td class="al-right"><button asp-page-handler="Delete" asp-route-id="@cliente.Id"
+                                onclick="return confirm('¿Está seguro de eliminar este cliente?')"
+                                class="light-buttons">Eliminar</button></td>
+                        </tr>
+                    }
+                </form>
+            </tbody>
+        </table>
+    </div>
+    <hr>
+    <div class="container-fluid">
+        <div class="mini-containerA">
+            <div>
+                <h1>Registrar Clientes</h1>
+            </div>
+            <div class="shadow">
+                <form method="post" class="overflow">
+                    <input type="text" asp-for="NuevoCliente.Nombre" placeholder="Nombres" required />
+                    <input type="text" asp-for="NuevoCliente.Apellido" placeholder="Apellidos" required />
+                    <input type="text" asp-for="NuevoCliente.Cedula" placeholder="Cedula" required />
+                    <input type="text" asp-for="NuevoCliente.Telefono" placeholder="Telefono" required />
+                    <input type="text" asp-for="NuevoCliente.Direccion" placeholder="Dirección" required />
+                    <input type="email" asp-for="NuevoCliente.Correo" placeholder="Correo" required />
+                    <button type="submit" class="no-light-buttons">Guardar</button>
+                </form>
+            </div>
+        </div>
+        <div class="mini-containerB">
+            <div>
+                <h1>Actualizar Cliente</h1>
+            </div>
+            <div class="shadow">
+                <form method="post" class="overflow">
+                    <input type="text" asp-for="ClienteEditar.Cedula" placeholder="Buscar Cédula" required />
+                    <input type="text" asp-for="ClienteEditar.Nombre" placeholder="Nombres" required />
+                    <input type="text" asp-for="ClienteEditar.Apellido" placeholder="Apellidos" required />
+                    <input type="text" asp-for="ClienteEditar.Telefono" placeholder="Telefono" required />
+                    <input type="text" asp-for="ClienteEditar.Direccion" placeholder="Direccion" required />
+                    <input type="email" asp-for="ClienteEditar.Correo" placeholder="Correo" required />
+                    <button type="submit" asp-page-handler="Edit" class="no-light-buttons">Editar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
