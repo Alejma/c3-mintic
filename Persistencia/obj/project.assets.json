@@ -5820,11 +5820,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\c#\\prueba\\DevTic-Masters\\IndustriaAutomotriz\\Persistencia\\Persistencia.csproj",
+      "projectUniqueName": "D:\\c#\\Proyecto\\c3-mintic\\Persistencia\\Persistencia.csproj",
       "projectName": "Persistencia",
-      "projectPath": "D:\\c#\\prueba\\DevTic-Masters\\IndustriaAutomotriz\\Persistencia\\Persistencia.csproj",
+      "projectPath": "D:\\c#\\Proyecto\\c3-mintic\\Persistencia\\Persistencia.csproj",
       "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
-      "outputPath": "D:\\c#\\prueba\\DevTic-Masters\\IndustriaAutomotriz\\Persistencia\\obj\\",
+      "outputPath": "D:\\c#\\Proyecto\\c3-mintic\\Persistencia\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -5838,8 +5838,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "D:\\c#\\prueba\\DevTic-Masters\\IndustriaAutomotriz\\Dominio\\Dominio.csproj": {
-              "projectPath": "D:\\c#\\prueba\\DevTic-Masters\\IndustriaAutomotriz\\Dominio\\Dominio.csproj"
+            "D:\\c#\\Proyecto\\c3-mintic\\Dominio\\Dominio.csproj": {
+              "projectPath": "D:\\c#\\Proyecto\\c3-mintic\\Dominio\\Dominio.csproj"
             }
           }
         }

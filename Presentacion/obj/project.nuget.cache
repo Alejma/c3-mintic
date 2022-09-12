@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "r5tmUuWh21aWFS+i/GWGYUG2quzWkd2TcBz/+6mVf16NnsgF2vXhoUDH5BFeaobcLmDXli2vEbX8QpNWIoidbw==",
+  "dgSpecHash": "ROjM+nfiKv2VO+L6/T+o637uUVICybyZYRJVkC0EJzCnrTZd6Mp1StQOhpr1DkSimmAzF+/x59woxn+zJj8JuA==",
   "success": true,
-  "projectFilePath": "D:\\c#\\prueba\\DevTic-Masters\\IndustriaAutomotriz\\Presentacion\\Presentacion.csproj",
+  "projectFilePath": "D:\\c#\\Proyecto\\c3-mintic\\Presentacion\\Presentacion.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\USUARIO\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\USUARIO\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
