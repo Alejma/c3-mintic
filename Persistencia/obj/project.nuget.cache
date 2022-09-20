@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WX8piPEObeh1eEBYYjmfkaqlai1fxV5lyAnNfQDYu7XisL4qefT7YvXNa42X24ngYUJ0/ZcAPpl0NqCiLVeEqw==",
+  "dgSpecHash": "7DPQJRUO4M7rdO0gh5Bkfv6C7lyhCrd9lNZi6y+1i3MpVUVUi1DPbw3HVFNwLa7lWc3rBYHPzM43yksbApRCvA==",
   "success": true,
-  "projectFilePath": "D:\\c#\\Proyecto\\c3-mintic\\Persistencia\\Persistencia.csproj",
+  "projectFilePath": "D:\\c#\\Develop\\DevTic-Masters\\IndustriaAutomotriz\\Persistencia\\Persistencia.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\USUARIO\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\USUARIO\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

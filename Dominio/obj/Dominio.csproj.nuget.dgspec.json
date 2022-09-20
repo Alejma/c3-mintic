@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\c#\\Proyecto\\c3-mintic\\Dominio\\Dominio.csproj": {}
+    "D:\\c#\\Develop\\DevTic-Masters\\IndustriaAutomotriz\\Dominio\\Dominio.csproj": {}
   },
   "projects": {
-    "D:\\c#\\Proyecto\\c3-mintic\\Dominio\\Dominio.csproj": {
+    "D:\\c#\\Develop\\DevTic-Masters\\IndustriaAutomotriz\\Dominio\\Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\c#\\Proyecto\\c3-mintic\\Dominio\\Dominio.csproj",
+        "projectUniqueName": "D:\\c#\\Develop\\DevTic-Masters\\IndustriaAutomotriz\\Dominio\\Dominio.csproj",
         "projectName": "Dominio",
-        "projectPath": "D:\\c#\\Proyecto\\c3-mintic\\Dominio\\Dominio.csproj",
+        "projectPath": "D:\\c#\\Develop\\DevTic-Masters\\IndustriaAutomotriz\\Dominio\\Dominio.csproj",
         "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
-        "outputPath": "D:\\c#\\Proyecto\\c3-mintic\\Dominio\\obj\\",
+        "outputPath": "D:\\c#\\Develop\\DevTic-Masters\\IndustriaAutomotriz\\Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config"

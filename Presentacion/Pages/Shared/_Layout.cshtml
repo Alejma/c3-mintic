@@ -14,14 +14,9 @@
     <link rel="stylesheet" href="~/css/estilos.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <style>
-        body {
-            background-color: aliceblue;
-        }
 
-        .container2 {
-            width: 100vw;
-        }
-
+        body {background-color: aliceblue;}
+        .container2 {width: 100vw;}
         .main2 {
             display: flex !important;
             width: 100%;
@@ -29,58 +24,44 @@
             justify-content: center;
             align-content: center;
         }
-
-        .fondo {
-            background-color: royalblue !important;
-        }
-
-        /*ul.navbar-nav a:hover { color: #b5b073 !important; }*/
+        .fondo {background-color: royalblue !important;}
+        
     </style>
-</head>
 
+</head>
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light fondo mb-4">
-            <a href="/Index">
-                <i class="bi bi-car-front-fill" style="font-size:80px; line-height:0px; color:#073495"></i>
-            </a>
+
+            <a class="navbar-brand text-light" asp-area="" asp-page="/Index">Industria Automotriz</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav">
-                    <li class="nav-item elementos-navbar">
-                        <a class="nav-link text-light asp-area=" asp-page="/QuienesSomos">Quienes Somos</a>
-                    </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light" asp-area="" asp-page="/Contacto">Contacto</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light" asp-area="" asp-page="/GestionAccesos">Gestión Accesos</a>
+                        <a class="nav-link text-light" asp-area="" asp-page="/EspacioPersonal">Espacio Personal</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-light" asp-area="" asp-page="/EspacioTrabajo">Espacio Trabajo</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link text-light" asp-area="" asp-page="/GestionAccesos">Gestión Accesos</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link text-light" asp-area="" asp-page="/Cruds">Cruds</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light" asp-area="" asp-page="/MisRevisiones">Mis Revisiones</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light" asp-area="" asp-page="/MisOrdenes">Mis Ordenes</a>
                     </li>
                 </ul>
             </div>
 
         </nav>
     </header>
-    <div class="container2">
-        <main role="main" class="main2">
-            @RenderBody()
-        </main>
-    </div>
+
+    <main role="main" class="main2">
+        @RenderBody()
+    </main>
+
 
     <footer class="border-top footer text-muted footer-dev">
         <div class="container">

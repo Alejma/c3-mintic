@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\c#\\Proyecto\\c3-mintic\\Presentacion\\Presentacion.csproj": {}
+    "D:\\c#\\Develop\\DevTic-Masters\\IndustriaAutomotriz\\Presentacion\\Presentacion.csproj": {}
   },
   "projects": {
-    "D:\\c#\\Proyecto\\c3-mintic\\Dominio\\Dominio.csproj": {
+    "D:\\c#\\Develop\\DevTic-Masters\\IndustriaAutomotriz\\Dominio\\Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\c#\\Proyecto\\c3-mintic\\Dominio\\Dominio.csproj",
+        "projectUniqueName": "D:\\c#\\Develop\\DevTic-Masters\\IndustriaAutomotriz\\Dominio\\Dominio.csproj",
         "projectName": "Dominio",
-        "projectPath": "D:\\c#\\Proyecto\\c3-mintic\\Dominio\\Dominio.csproj",
+        "projectPath": "D:\\c#\\Develop\\DevTic-Masters\\IndustriaAutomotriz\\Dominio\\Dominio.csproj",
         "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
-        "outputPath": "D:\\c#\\Proyecto\\c3-mintic\\Dominio\\obj\\",
+        "outputPath": "D:\\c#\\Develop\\DevTic-Masters\\IndustriaAutomotriz\\Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -54,14 +54,14 @@
         }
       }
     },
-    "D:\\c#\\Proyecto\\c3-mintic\\Persistencia\\Persistencia.csproj": {
+    "D:\\c#\\Develop\\DevTic-Masters\\IndustriaAutomotriz\\Persistencia\\Persistencia.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\c#\\Proyecto\\c3-mintic\\Persistencia\\Persistencia.csproj",
+        "projectUniqueName": "D:\\c#\\Develop\\DevTic-Masters\\IndustriaAutomotriz\\Persistencia\\Persistencia.csproj",
         "projectName": "Persistencia",
-        "projectPath": "D:\\c#\\Proyecto\\c3-mintic\\Persistencia\\Persistencia.csproj",
+        "projectPath": "D:\\c#\\Develop\\DevTic-Masters\\IndustriaAutomotriz\\Persistencia\\Persistencia.csproj",
         "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
-        "outputPath": "D:\\c#\\Proyecto\\c3-mintic\\Persistencia\\obj\\",
+        "outputPath": "D:\\c#\\Develop\\DevTic-Masters\\IndustriaAutomotriz\\Persistencia\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -75,8 +75,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\c#\\Proyecto\\c3-mintic\\Dominio\\Dominio.csproj": {
-                "projectPath": "D:\\c#\\Proyecto\\c3-mintic\\Dominio\\Dominio.csproj"
+              "D:\\c#\\Develop\\DevTic-Masters\\IndustriaAutomotriz\\Dominio\\Dominio.csproj": {
+                "projectPath": "D:\\c#\\Develop\\DevTic-Masters\\IndustriaAutomotriz\\Dominio\\Dominio.csproj"
               }
             }
           }
@@ -130,14 +130,14 @@
         }
       }
     },
-    "D:\\c#\\Proyecto\\c3-mintic\\Presentacion\\Presentacion.csproj": {
+    "D:\\c#\\Develop\\DevTic-Masters\\IndustriaAutomotriz\\Presentacion\\Presentacion.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\c#\\Proyecto\\c3-mintic\\Presentacion\\Presentacion.csproj",
+        "projectUniqueName": "D:\\c#\\Develop\\DevTic-Masters\\IndustriaAutomotriz\\Presentacion\\Presentacion.csproj",
         "projectName": "Presentacion",
-        "projectPath": "D:\\c#\\Proyecto\\c3-mintic\\Presentacion\\Presentacion.csproj",
+        "projectPath": "D:\\c#\\Develop\\DevTic-Masters\\IndustriaAutomotriz\\Presentacion\\Presentacion.csproj",
         "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
-        "outputPath": "D:\\c#\\Proyecto\\c3-mintic\\Presentacion\\obj\\",
+        "outputPath": "D:\\c#\\Develop\\DevTic-Masters\\IndustriaAutomotriz\\Presentacion\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -151,11 +151,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\c#\\Proyecto\\c3-mintic\\Dominio\\Dominio.csproj": {
-                "projectPath": "D:\\c#\\Proyecto\\c3-mintic\\Dominio\\Dominio.csproj"
+              "D:\\c#\\Develop\\DevTic-Masters\\IndustriaAutomotriz\\Dominio\\Dominio.csproj": {
+                "projectPath": "D:\\c#\\Develop\\DevTic-Masters\\IndustriaAutomotriz\\Dominio\\Dominio.csproj"
               },
-              "D:\\c#\\Proyecto\\c3-mintic\\Persistencia\\Persistencia.csproj": {
-                "projectPath": "D:\\c#\\Proyecto\\c3-mintic\\Persistencia\\Persistencia.csproj"
+              "D:\\c#\\Develop\\DevTic-Masters\\IndustriaAutomotriz\\Persistencia\\Persistencia.csproj": {
+                "projectPath": "D:\\c#\\Develop\\DevTic-Masters\\IndustriaAutomotriz\\Persistencia\\Persistencia.csproj"
               }
             }
           }
